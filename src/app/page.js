@@ -40,7 +40,7 @@ export default function Home() {
         <main className="container max-w-3xl">
           <span>
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-black  sm:mb-3">Hi, im Fasha </h1>
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold mb-5 bg-gradient-to-r from-orange-400 to-rose-800 bg-clip-text text-transparent">Kerja paksa</h2>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold mb-5 bg-gradient-to-r from-orange-400 to-rose-800 bg-clip-text text-transparent">Front end developer</h2>
             <p className="text-sm sm:text-xl w-full font-medium">I'm a web artisan who loves the art of designing layouts and ensuring that users can engage optimally through a responsive interface.</p>
           </span>
           <br />
