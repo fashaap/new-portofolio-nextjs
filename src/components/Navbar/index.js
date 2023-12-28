@@ -2,7 +2,7 @@
 
 import { Ghost } from 'lucide-react';
 
-import {  useState } from 'react';
+import {  useState, useEffect } from 'react';
 
 
 
@@ -43,19 +43,26 @@ export const NavLinkButton = () => {
 
 export const Navbar = () => {
 
-  const [navbarFixed, setNavbarFixed] = useState(false)
+  const [navbarFixed, setNavbarFixed] = useState(false);
 
   const setFixed = () => {
     if (window.scrollY >= 30) {
-      setNavbarFixed(true)
+      setNavbarFixed(true);
     } else {
-      setNavbarFixed(false)
+      setNavbarFixed(false);
     }
-  }
+  };
 
-  window.addEventListener("scroll", setFixed)
+  useEffect(() => {
+    // Add event listener when component mounts
+    window.addEventListener("scroll", setFixed);
 
-
+    // Cleanup: Remove event listener when component unmounts
+    return () => {
+      window.removeEventListener("scroll", setFixed);
+    };
+  }, []);
+  
   return (
     <nav className={navbarFixed ? " backdrop-blur-xl text-white sticky top-0 z-50 border-b" : " border-b-0 text-white sticky top-0 z-50 "}>
       <main className='container max-w-7xl flex justify-between items-center pt-5 pb-5 relative'>
