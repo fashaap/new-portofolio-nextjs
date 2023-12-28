@@ -63,7 +63,7 @@ export default function Home() {
             return (
               <main key={index} class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow  ">
 
-                <img className="w-7 h-7 md:w-10 md:h-10" src={item.icon}>
+                <img className="w-7 h-7 md:w-10 md:h-10" src={item.icon} alt={item.name}>
                 </img>
                 <h5 class="mb-2 text-xl md:text-1xl  font-bold tracking-tight text-gray-900 ">{item.name}</h5>
                 <p class="font-normal text-gray-700 text-between  line-clamp-3 ">{item.desc}</p>
