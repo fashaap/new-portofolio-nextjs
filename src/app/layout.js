@@ -1,7 +1,16 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+import { Poppins } from 'next/font/google'
+import './globals.css'
+import { Navbar } from '@/components/Navbar'
+import { Footer } from '@/components/Footer'
+
+
+const poppins = Poppins({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +20,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>
+        <section className="bg-gradient-to-r from-slate-900 via-[#1e1b4b] to-slate-900 bg-no-repeat bg-cover  ">
+          <main className="bg-[url('/grid.svg')]">
+            <Navbar />
+            <div className="">{children}</div>
+            <Footer />
+          </main>
+        </section>
+      </body>
     </html>
   )
 }
