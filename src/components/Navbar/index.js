@@ -54,10 +54,8 @@ export const Navbar = () => {
   };
 
   useEffect(() => {
-    // Add event listener when component mounts
     window.addEventListener("scroll", setFixed);
 
-    // Cleanup: Remove event listener when component unmounts
     return () => {
       window.removeEventListener("scroll", setFixed);
     };
