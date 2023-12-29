@@ -65,8 +65,8 @@ export default function Home() {
 
                 <img className="w-7 h-7 md:w-10 md:h-10" src={item.icon} alt={item.name}>
                 </img>
-                <h1 class="mb-2 text-xl md:text-1xl  font-bold tracking-tight text-gray-900 ">{item.name}</h1>
-                <p class="font-normal text-gray-700 text-between  line-clamp-3 ">{item.desc}</p>
+                <h1 className="mb-2 text-xl md:text-1xl  font-bold tracking-tight text-gray-900 ">{item.name}</h1>
+                <p className="font-normal text-gray-700 text-between  line-clamp-3 ">{item.desc}</p>
               </main>
             )
           })}
