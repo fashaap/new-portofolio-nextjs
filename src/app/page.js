@@ -61,7 +61,7 @@ export default function Home() {
         <article className="container mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4  ">
           {dataSkill.map((item, index) => {
             return (
-              <main key={index} class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow  ">
+              <main key={index} className="w-full p-6 bg-white border border-gray-200 rounded-lg shadow  ">
 
                 <img className="w-7 h-7 md:w-10 md:h-10" src={item.icon} alt={item.name}>
                 </img>

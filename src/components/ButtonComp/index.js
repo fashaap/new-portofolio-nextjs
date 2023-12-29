@@ -56,7 +56,7 @@ export const ButtonComp = () => {
               return (
                 <button key={index} href={item.link} type="button" className="w-full py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-300  focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
                   <span className="flex justify-between items-center ">
-                    <img src={item.icon} alt={item.name} className="h-5 w-5 "/>
+                    <img  className="h-5 w-5 " src={item.icon} alt={item.name}/>
                     <span className="ml-2">{item.name}</span>
                     <ArrowUpRight />
                   </span>
