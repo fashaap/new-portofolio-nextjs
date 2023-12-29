@@ -81,8 +81,7 @@ export default function Home() {
         <article className="container mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4  ">
           <main>
             <div>
-
-              <img className="w-full h-full rounded-xl" src="/web-osis.png" alt="web osis">
+              <img className="w-full h-full rounded-xl" src="/image/web-osis-min.png" alt="web osis">
               </img>
             </div>
             <div>
