@@ -82,7 +82,7 @@ export default function Home() {
           <main>
             <div>
 
-              <img className="w-full h-full rounded-xl" src="/image/web-osis.png" alt="web osis">
+              <img className="w-full h-full rounded-xl" src="/web-osis.png" alt="web osis">
               </img>
             </div>
             <div>
