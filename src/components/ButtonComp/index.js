@@ -44,7 +44,7 @@ export const ButtonComp = () => {
         <div className="bg-[#12122e] hover:border-white  font-semibold hover:text-white py-2 px-4 border border-[#555d7a] hover:border-transparent rounded-full">
           <span className="flex justify-center items-center">
             <UserRound className="h-5 w-5" />
-            <span className="ml-2">Contact Me</span>
+            <span className="ml-2 text-sm">Contact Me</span>
           </span>
         </div>
       </AlertDialogTrigger>
@@ -54,11 +54,9 @@ export const ButtonComp = () => {
           <AlertDialogDescription>
             {buttonData.map((item, index) => {
               return (
-                <button key={index} href={item.link} type="button" class="w-full py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-300  focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                <button key={index} href={item.link} type="button" className="w-full py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-300  focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
                   <span className="flex justify-between items-center ">
-                    <span className="h-5 w-5 ">
-                    {item.icon}
-                    </span>
+                    <img src={item.icon} alt={item.name} className="h-5 w-5 "/>
                     <span className="ml-2">{item.name}</span>
                     <ArrowUpRight />
                   </span>
